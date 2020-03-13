@@ -12,7 +12,10 @@
             list-style: none;
             text-align: left;
         }
-
+        body {
+            background-color: rgba(199, 216, 247, 0.781);
+        }
+        
         nav {
             background-color: #29C4F8;
             color: #fff;
@@ -30,14 +33,27 @@
 
         }
 
+
         #mypic {
             width: 300px;
             height: 350px;
             float: right;
             padding: 2%;
+            margin-right: 15em;
         }
 
         #nav li a:hover {
+            color: blue;
+        }
+
+        .heading {
+            font-size: 1.5em;
+            text-decoration: underline;
+            padding: 2%;
+        }
+
+        #skill {
+            text-decoration: none;
             color: blue;
         }
     </style>
@@ -46,7 +62,7 @@
 <body>
     <nav>
         <ul id="nav">
-            <li><a href=" ">Profile</a></li>
+            <li><a href="#intro">Profile</a></li>
             <li><a href=" ">About</a></li>
             <li><a href=" ">Skills</a></li>
             <li><a href=" ">Contact details</a></li>
@@ -54,6 +70,17 @@
     </nav>
     <section>
         <img src="images/mike.jpg" id="mypic">
+    </section>
+    <section>
+        <div class="heading">
+            Introduction
+        </div>
+        My name is <u>Michael Musyoka.</u>I am 17 years old.<br>
+        I am a student at Ubunifu college.<br>
+        By studying programming at Ubunifu<br>
+        I have managed to acquire a lot of <a href=" " id="skill">skills</a><br>
+        that have enabled me to develop websites<br>
+        and improve more on my knowledge<br>
     </section>
 </body>
 
