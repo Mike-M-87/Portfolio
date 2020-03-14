@@ -11,20 +11,21 @@
             margin: 0;
             list-style: none;
             text-align: left;
+            word-spacing: 2em;
         }
-        body {
-            background-color: rgba(199, 216, 247, 0.781);
-        }
-        
+
         nav {
             background-color: #29C4F8;
             color: #fff;
-            padding: 1.5%;
+            padding: 2%;
         }
 
         #nav li {
             display: inline-block;
-            padding: 1.5%;
+            padding: 0.5%;
+            background-color: rgb(241, 68, 68);
+            border-radius: 15%;
+            font-size: 1.2em;
         }
 
         #nav li a {
@@ -33,10 +34,13 @@
 
         }
 
+        #about {
+            padding-top: 17em;
+        }
 
         #mypic {
             width: 300px;
-            height: 350px;
+            height: 400px;
             float: right;
             padding: 2%;
             margin-right: 15em;
@@ -46,15 +50,16 @@
             color: blue;
         }
 
+        .description {
+            padding: 0.5%;
+        }
+
         .heading {
             font-size: 1.5em;
             text-decoration: underline;
-            padding: 2%;
-        }
-
-        #skill {
-            text-decoration: none;
-            color: blue;
+            padding-left: 1%;
+            color:rgb(241, 68, 68);
+            font-weight: bold;
         }
     </style>
 </head>
@@ -63,25 +68,41 @@
     <nav>
         <ul id="nav">
             <li><a href="#intro">Profile</a></li>
-            <li><a href=" ">About</a></li>
-            <li><a href=" ">Skills</a></li>
-            <li><a href=" ">Contact details</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
     <section>
         <img src="images/mike.jpg" id="mypic">
     </section>
-    <section>
+    <section id="intro">
         <div class="heading">
             Introduction
         </div>
-        My name is <u>Michael Musyoka.</u>I am 17 years old.<br>
-        I am a student at Ubunifu college.<br>
-        By studying programming at Ubunifu<br>
-        I have managed to acquire a lot of <a href=" " id="skill">skills</a><br>
-        that have enabled me to develop websites<br>
-        and improve more on my knowledge<br>
+        <div class="description">
+            <p>My name is <u>Michael Musyoka.</u>I am 17 years old.<br>
+                I am a student at Ubunifu college.<br>
+                By studying programming at Ubunifu<br>
+                I have managed to acquire a lot of skills<br>
+                that have enabled me to develop websites<br>
+                and improve more on my knowledge</p>
+        </div>
     </section>
+    <section id="about">
+        <div class="heading">
+            About
+        </div>
+        <div class="description">
+            I am learning to be professional web designer <br>
+            to develop beautiful and even more interactive<br>
+            and functional websites using other<br>
+            scripting languages like Javascript.
+        </div>
+    </section>
+    
+
+        
 </body>
 
 </html>
