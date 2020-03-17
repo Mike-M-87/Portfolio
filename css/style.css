@@ -1,0 +1,315 @@
+body {
+    background-image: url("../dark4.jpg");
+    background-size: 100vw 100vh;
+    color: rgb(199, 220, 252);
+}
+#nav {
+    margin: 0;
+    list-style: none;
+    word-spacing: 2em;
+}
+
+nav {
+    background-color: #2196f3;
+    padding: 2%;
+    position: fixed;
+    width: 100%;
+    opacity: 0.95;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0.5%;
+    font-size: 1.2em;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: rgb(226, 234, 255);
+}
+
+#nav li a:hover {
+    color: #b8dbfa;
+    background: rgb(241, 68, 68);
+    box-shadow: 0 0 10px rgb(241, 68, 68),0 0 40px rgb(241, 68, 68), 0 0 80px rgb(241, 68, 68);
+    transition: 0.3s ease;
+    border-radius: 5%;
+}
+#nav li a:active {
+    color: #b8dbfa;
+    background-color: rgb(241, 68, 68);
+    border-radius: 5%;
+}
+.description {
+    padding: 0.5%;
+}
+
+.heading {
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-left: 1em;
+    color: rgb(241, 68, 68);
+    font-weight: bold;
+}
+
+#intro {
+    margin-top: 5%;
+}
+
+#mypic {
+    width: 35vw;
+    height: 80vh;
+    float: right;
+    margin-top: 6em;
+    margin-right: 10em;
+    border-radius: 100%;
+}
+
+#about {
+    padding-top: 17em;
+}
+
+#skill {
+    text-align: center;
+}
+
+.skillimg {
+    width: 300px;
+    height: 200px;
+    padding: 1%;
+}
+
+#contacts {
+    background-image: url("../black.jpg");
+    background-size: 1280px 250;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contpics {
+    display: flex;
+}
+
+.container {
+    position: relative;
+    left: 380px;
+    
+}
+
+.contimg {
+    width: 130px;
+    height: 130px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    height: 130px;
+    width: 130px;
+    opacity: 0.03;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    opacity: 0.97;
+}
+
+.pictext {
+    color: rgb(226, 234, 255);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+}
+
+.container2 {
+    position: relative;
+    left: 410px;
+    
+}
+
+.contimg2 {
+    width: 130px;
+    height: 130px;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    height: 130px;
+    width: 130px;
+    opacity: 0.03;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container2:hover .overlay2 {
+    opacity: 0.9;
+}
+
+.pictext2 {
+    color: rgb(226, 234, 255);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+}
+
+.container3 {
+    position: relative;
+    left: 440px;
+    
+}
+
+.contimg3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    height: 130px;
+    width: 130px;
+    opacity: 0.25;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 50%;
+}
+
+.container3:hover .overlay3 {
+    opacity: 1;
+}
+
+.pictext3 {
+    color: rgb(226, 234, 255);
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+}
+#footer {
+    text-align: right;
+    background-color: black;
+    word-spacing: 1.5em;
+    padding: 1%;
+    opacity: 0.95;
+}
+
+#footer a {
+    word-spacing: normal;
+}
+
+#footer .back {
+    color: rgb(226, 234, 255);
+    background-color: rgb(241, 68, 68);
+    padding: 0.3%;
+    text-decoration: none;
+    border-radius: 10%;
+}
+@media screen and (max-width: 500px) {
+    
+    body {
+        font-size: 0.7em;
+        background-image: url("../dark1.jpg");
+        background-size: 100vw 100vh;
+    }
+    #mypic {
+        width: 24vw;
+        height: 24vh;
+    }
+    nav {
+        position: fixed;
+        width: 60vw;
+        padding:1%;
+    }
+    #nav {
+        word-spacing: 5px;
+        padding: 0;
+    }
+    #intro {
+        margin-top: 9%;
+    }
+    #about {
+        text-align: justify;
+        
+    }
+    #skill {
+        text-align: left;
+        text-overflow: ellipsis;
+    }
+    .skillimg {
+        width: 23%;
+        height: 20%;
+        padding: 0.1%;
+    }
+    .heading {
+        font-size: 1.5em;
+    }
+    #contacts {
+        text-align: left;
+        background-image: none;
+    }
+    .contpics {
+        display: block;
+        width: 40%;
+        height: 40%;
+    }
+    #cont {
+        font-size: 0.7em;
+    }
+    .contimg {
+        height: 40%;
+        width: 40%;
+    }
+    .contimg2 {
+        height: 40%;
+        width: 40%;
+    }
+    .contimg3 {
+        height: 40%;
+        width: 40%;
+    }
+    .container {
+        left: 0;
+    }
+    .container2 {
+        left: 0;
+    }
+    .container3 {
+        left: 0;
+    }
+    .overlay {
+        width: 40%;
+        height: 95%;
+    }
+    .overlay2 {
+        width: 40%;
+        height: 95%;
+    }
+    .overlay3 {
+        width: 40%;
+        height: 100%;
+    }        
+    .pictext {
+        font-size: 0.8em;
+    }
+    .pictext2 {
+        font-size: 0.8em;
+    }
+    .pictext3 {
+        font-size: 0.5em;
+    }
+    #footer {
+        text-align: left;
+        word-spacing: 1.1em;
+    }
+}
